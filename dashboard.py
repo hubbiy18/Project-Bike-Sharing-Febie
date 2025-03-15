@@ -31,7 +31,7 @@ df_day['day_type'] = df_day['weekday'].apply(lambda x: 'Weekend' if x in [0, 6] 
 st.sidebar.title("Pilih Analisis")
 page = st.sidebar.radio("Navigasi", ["Tren Bulanan", "Hari Kerja vs Akhir Pekan"])
 
-# --- 📊 1. Visualisasi Tren Peminjaman Bulanan ---
+# 1. Visualisasi Tren Peminjaman Bulanan ---
 if page == "Tren Bulanan":
     st.title("Tren Peminjaman Sepeda per Bulan")
 
@@ -103,5 +103,3 @@ elif page == "Hari Kerja vs Akhir Pekan":
 
 # Footer
 st.sidebar.info("Dashboard ini dibuat untuk menampilkan hasil analisis dataset Bike Sharing.")
-
-pip freeze > requirements.txt
